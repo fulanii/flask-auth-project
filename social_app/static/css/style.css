@@ -19,7 +19,9 @@ body{
 .home-register-btn{
     width: 100%;
 }
-
+.home-user-name{
+    color: rgb(0, 17, 255);
+}
 
 
 /* LOGIN page css */
