@@ -1,0 +1,31 @@
+
+
+body{
+    background-color: #5DA7DB;
+}
+
+/* HOME page css */
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-right: -50%; */
+}
+.home-login-btn{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.home-register-btn{
+    width: 100%;
+}
+
+
+
+/* LOGIN page css */
+.register-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

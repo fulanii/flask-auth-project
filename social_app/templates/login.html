@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="login-box">
+        <form method="POST" action="{{ url_for('login') }}" novalidate>
+
+            {{ form.csrf_token }}
+
+            {% for messages in get_flashed_messages(category_filter=["register-success"]) %}
+                <span style="color: greenyellow"> {{ messages }} </span>
+            {% endfor %}
+
+            {% for messages in get_flashed_messages(category_filter=["login-info"]) %}
+                <span style="color: red;"> {{ messages }} </span>
+            {% endfor %}
+            
+            <p>	
+                {{ form.email.label }} <br> {{ form.email(size=30) }} 
+                    {% for err in form.email.errors %} 
+                        <span style="color: red;"> {{ err }} </span>
+                    {% endfor %}
+
+
+            </p>
+            <p>	
+                {{ form.password.label }} <br> {{ form.password(size=30) }} 
+                    {% for err in form.password.errors %} 
+                        <span style="color: red;"> {{ err }} </span>
+                    {% endfor %}
+
+                    {% for messages in get_flashed_messages(category_filter=["login-error"]) %}
+                        <span style="color: red;"> {{ messages }} </span>
+                    {% endfor %}
+            </p>                
+            
+            {{ form.submit }}
+    
+        </form>
+    </div>
+{% endblock %}

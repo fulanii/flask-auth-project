@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="register-box">
+        <form method="POST" action="{{ url_for('register') }}" novalidate>
+
+            {{ form.csrf_token }}
+
+            {% for messages in get_flashed_messages(category_filter=["register-error"]) %}
+                <span style="color: red"> {{ messages }} </span>
+            {% endfor %}
+
+
+            <p>	
+                {{ form.username.label }} <br> {{ form.username(size=30) }} 
+                    {% for err in form.username.errors %} 
+                        <span style="color: red;"> {{ err }} </span>
+                    {% endfor %}
+            </p>
+            <p>	
+                {{ form.email.label }} <br> {{ form.email(size=30) }} 
+                    {% for err in form.email.errors %} 
+                        <span style="color: red;"> {{ err }} </span>
+                    {% endfor %}
+            </p>
+            <p>	
+                {{ form.password.label }} <br> {{ form.password(size=30) }} 
+                    {% for err in form.password.errors %} 
+                        <span style="color: red;"> {{ err }} </span>
+                    {% endfor %}
+            </p>                
+            
+            {{ form.submit }}
+    
+        </form>
+    </div>
+{% endblock %}
