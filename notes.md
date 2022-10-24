@@ -39,3 +39,7 @@ social_app: is the package (a package need an __init__ module)
 from social_app import moduleName 
 from . import moduleName (relative import . means from this folder)
 from social_app.moduleName import (somethings in the module)
+
+
+When u get port is taken etc when u run flask use: 
+sudo lsof -i :5000  (to see program taking port then) kill -9 <PID>
