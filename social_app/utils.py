@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash
 from flask_sqlalchemy import SQLAlchemy
 
 # Imports from my package
-from social_app.db_models import User, db
+from social_app.db_models import User, db1
 
 
 def add_user_to_db(data:dict):
@@ -16,8 +16,8 @@ def add_user_to_db(data:dict):
     try:
         password_hash =  generate_password_hash(password, method='pbkdf2:sha256', salt_length=8)
         new_user = User(username=username, password=password_hash, email=email)
-        db.session.add(new_user)
-        db.session.commit()
+        db1.session.add(new_user)
+        db1.session.commit()
         return True
     except Exception as err:
         return False

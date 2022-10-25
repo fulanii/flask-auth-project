@@ -12,7 +12,7 @@ from werkzeug.security import check_password_hash
 from social_app import app
 from social_app.forms import RegisterForm, LoginForm
 from social_app.utils import add_user_to_db
-from social_app.db_models import User, db
+from social_app.db_models import User
 
 
 @app.route("/")
