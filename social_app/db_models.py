@@ -11,6 +11,8 @@ from social_app import app
 # This module variables
 db = SQLAlchemy()
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/User.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database/Post.db"
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 login_manager = LoginManager()
@@ -38,6 +40,13 @@ class User(UserMixin, db.Model):
 
     def is_anonymous(self):
         return False
+
+
+class Post(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(30), nullable=False, unique=True )
+    post = db.Column(db.String(250), nullable=False, unique=False)
+
 
 
 

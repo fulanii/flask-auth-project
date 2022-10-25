@@ -59,9 +59,12 @@ def login():
 
 #** Routes Bellow Require Logins
 #** Routes Bellow Require Logins
-@app.route("/secret")
+@app.route("/secret", methods=["GET", "POST"])
 @login_required
 def secret_page():
+    if request.method == "POST":
+        data = request.form
+        print(data)
     return render_template("secret.html", name=current_user.username, logged_in=current_user.is_authenticated)
 
 @app.route("/logout")
@@ -77,6 +80,3 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
-
-# email.emaileme@gmail.com
-# username1

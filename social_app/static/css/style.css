@@ -31,3 +31,28 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Secret Page */
+.secret-div-2{
+    margin-top: 50px;
+}
+.secret-div-2-form-div{
+    width: 50%;
+    margin: auto;
+}
+@media only screen and (max-width: 990px) { /* 800 or less  */
+    .secret-div-2-form-div{
+        width: 100%;
+        margin: auto;
+    }
+  }
+.secret-div-2-h1{
+    color: white;
+    font-size: 40px;
+}
+.secret-div-post-div{
+    margin-top: 50px;
+    /* border-top: solid gray; */
+    border-left: solid gray;
+    border-right: solid gray;
+}
