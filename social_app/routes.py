@@ -2,6 +2,7 @@
 
 # General imports
 import time
+from turtle import pos
 
 # Flask Imports
 from flask import render_template, flash, url_for, redirect, request
@@ -11,7 +12,7 @@ from werkzeug.security import check_password_hash
 # Imports From My Package
 from social_app import app
 from social_app.forms import RegisterForm, LoginForm
-from social_app.utils import add_user_to_db, get_all_posts, add_to_post_db
+from social_app.utils import add_user_to_db, get_all_posts, add_to_post_db, delete_posts
 from social_app.db_models import User
 
 
@@ -71,8 +72,6 @@ def secret_page():
         else:
             flash(message="Post can't be empty", category="post-error")
             return redirect(url_for("secret_page"))           
-
-
     all_posts = get_all_posts()
     return render_template("secret.html", name=current_user.username, logged_in=current_user.is_authenticated, all_posts=all_posts)
 
@@ -81,6 +80,16 @@ def secret_page():
 def logout():
     logout_user()
     return redirect(url_for('home_page'))
+
+@app.route("/delete/<int:post_id>", methods=["GET"])
+@login_required
+def delete_post(post_id):
+    if delete_posts(id=post_id):
+        flash(message="Post deleted", category="post_delete_success")
+        return redirect(url_for("secret_page"))
+        
+    return "deleted"
+
 
 #** Custon Error pages
 #** Custon Error pages

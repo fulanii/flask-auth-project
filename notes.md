@@ -29,10 +29,7 @@
 
 
 ## TO DO
-add requirement text file :DONE
-add unique email and username check for register new user : KINDA DONE
-fix flash() for login and register routes :DONE
-
+Last thing left: Make post edit and delete btn work
 
 ## Notes
 social_app: is the package (a package need an __init__ module)

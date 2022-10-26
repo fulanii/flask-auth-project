@@ -29,7 +29,6 @@ def add_to_post_db(data):
     new_post = Post(username=current_user.username, post=data["post-text"])
     try:
         post = data["post-text"]
-        print(f"post from user: {post}")
         if post == " ":
             return False
         else:
@@ -45,3 +44,8 @@ def add_to_post_db(data):
 def get_all_posts():
    all_posts = Post.query.all()
    return all_posts
+
+
+def delete_posts(id:int) -> bool:
+    
+    return True
