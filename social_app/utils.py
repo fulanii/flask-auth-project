@@ -3,9 +3,11 @@
 # Flask imports 
 from werkzeug.security import generate_password_hash
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import  current_user
+
 
 # Imports from my package
-from social_app.db_models import User, db1
+from social_app.db_models import User, db1, Post, db2
 
 
 def add_user_to_db(data:dict):
@@ -21,3 +23,25 @@ def add_user_to_db(data:dict):
         return True
     except Exception as err:
         return False
+
+
+def add_to_post_db(data):
+    new_post = Post(username=current_user.username, post=data["post-text"])
+    try:
+        post = data["post-text"]
+        print(f"post from user: {post}")
+        if post == " ":
+            return False
+        else:
+            new_post = Post(username=current_user.username, post=post)
+            db2.session.add(new_post)
+            db2.session.commit()
+            return True
+    except Exception as err:
+        print(err)
+        return False
+
+
+def get_all_posts():
+   all_posts = Post.query.all()
+   return all_posts

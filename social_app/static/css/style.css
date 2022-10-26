@@ -56,3 +56,17 @@ body{
     border-left: solid gray;
     border-right: solid gray;
 }
+.secret-post-body{
+    margin-bottom: 0;
+    color: white;
+}
+.secret-post-username{
+    margin-top: 0;
+}
+.secret-edit-post{
+    margin-bottom: 30px;
+}
+.secret-delete-post{
+    margin-bottom: 30px;
+    margin-left: 5px;
+}

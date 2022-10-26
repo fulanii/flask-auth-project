@@ -13,7 +13,6 @@ db1 = SQLAlchemy()
 db2 = SQLAlchemy()
 
 
-
 SQLALCHEMY_DATABASE_URI = "sqlite:///database/User.db"
 app.config['SQLALCHEMY_BINDS']= {
     'db1': SQLALCHEMY_DATABASE_URI,
@@ -58,7 +57,7 @@ class Post(db2.Model):
     __bind_key__= "db2"
 
     id = db2.Column(db2.Integer, primary_key=True)
-    username = db2.Column(db2.String(30), nullable=False, unique=True )
+    username = db2.Column(db2.String(30), nullable=False, unique=False )
     post = db2.Column(db2.String(250), nullable=False, unique=False)
     info = {'bind_key': 'db2'}
 

@@ -11,7 +11,7 @@ from werkzeug.security import check_password_hash
 # Imports From My Package
 from social_app import app
 from social_app.forms import RegisterForm, LoginForm
-from social_app.utils import add_user_to_db
+from social_app.utils import add_user_to_db, get_all_posts, add_to_post_db
 from social_app.db_models import User
 
 
@@ -64,8 +64,17 @@ def login():
 def secret_page():
     if request.method == "POST":
         data = request.form
-        print(data)
-    return render_template("secret.html", name=current_user.username, logged_in=current_user.is_authenticated)
+
+        if add_to_post_db(data):
+            flash(message="Thank you for your post", category="post-success")
+            return redirect(url_for("secret_page"))
+        else:
+            flash(message="Post can't be empty", category="post-error")
+            return redirect(url_for("secret_page"))           
+
+
+    all_posts = get_all_posts()
+    return render_template("secret.html", name=current_user.username, logged_in=current_user.is_authenticated, all_posts=all_posts)
 
 @app.route("/logout")
 @login_required
