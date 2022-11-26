@@ -3,7 +3,7 @@
 
 This is my first project after i completed my Python bootcamp, a social media style web app done with flask and sqlite. The goal/purpose of this project was to demonstrate my skills in python and sql, so i only focus on the backend. And created a secure web app where a user can register an account, login, create posts see other people posts and be able to logout. 
 
-<hr>
+<br>
 
 # Steps by Step on how the backend work
 1. Register: 
@@ -28,11 +28,10 @@ Then if everything checks out save the credentials to the db, let the user know 
 
 3. Create post
 
-
-<hr>
+<br>
 
 <details>
-    <summary> <h1> 👨🏾‍💻 Techologies used </h1>  </summary>
+    <summary> <h1> Techologies used </h1>  </summary>
 
 1. Flask
     - flask_sqlalchemy
