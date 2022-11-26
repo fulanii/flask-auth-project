@@ -39,7 +39,7 @@ This is my first project after I completed my Python bootcamp, a social media st
 ``` Python3, Flask, flask_sqlalchemy, flask_login, flask_wtf, wtforms, Werkzeug, SQLite, HTML & CSS, Bootstrap, GIT ```
 
 # Run locally
-
+Will be deploying it soon when i finish with other project and my porfolio/personal site, in the meantime you can download and run it locally.
 ```
 $ git clone https://github.com/fulanii/flask-auth-project.git
 $ cd flask-auth-project
