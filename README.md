@@ -36,3 +36,11 @@ This is my first project after I completed my Python bootcamp, a social media st
 # Techologies used 
 ``` Python3, Flask, flask_sqlalchemy, flask_login, flask_wtf, wtforms, Werkzeug, SQLite, HTML & CSS, Bootstrap, GIT ```
 
+# Run locally
+
+```
+$ git clone https://github.com/fulanii/flask-auth-project.git
+$ cd flask-auth-project
+$ pip install -r requirements.txt
+$ python run.py
+```
