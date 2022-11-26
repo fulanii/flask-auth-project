@@ -32,7 +32,7 @@ Then if everything checks out save the credentials to the db, let the user know 
 <hr>
 
 <details>
-    <summary> <h1> Techologies used </h1>  </summary>
+    <summary> <h1> 👨🏾‍💻 Techologies used </h1>  </summary>
 
 1. Flask
     - flask_sqlalchemy
