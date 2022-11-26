@@ -5,7 +5,7 @@ This is my first project after i completed my Python bootcamp, a social media st
 
 <hr>
 
-## Steps by Step on how the backend work
+# Steps by Step on how the backend work
 1. Register: 
     - Register form (username, email, password)
     - making sure the submited fields arent empty 
@@ -28,13 +28,11 @@ Then if everything checks out save the credentials to the db, let the user know 
 
 3. Create post
 
-    
-
-
 
 <hr>
 
-## Techologies used 
+
+# Techologies used 
 1. Flask
     - flask_sqlalchemy
     - flask_login
