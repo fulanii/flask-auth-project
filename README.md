@@ -5,7 +5,9 @@ This is my first project after I completed my Python bootcamp, a social media st
 
 <br>
 
-# Step by Step on how the backend work
+<details>
+    <summary> <h1> Step by Step on how the backend work <h1>  </summary>
+
 1. Register form (username, email, password): 
     - making sure the submited fields arent empty 
     - making sure the user entered a valid email
@@ -44,3 +46,4 @@ $ cd flask-auth-project
 $ pip install -r requirements.txt
 $ python run.py
 ```
+</details>
