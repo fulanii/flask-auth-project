@@ -31,6 +31,7 @@ This is my first project after I completed my Python bootcamp, a social media st
 3. Create post
     - check post length 
     - finally add the post to the database 
+    ![post page](images/post.png)
 
 </details>
 
