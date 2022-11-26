@@ -31,8 +31,9 @@ Then if everything checks out save the credentials to the db, let the user know 
 
 <hr>
 
+<details>
+    <summary> <h1> Techologies used </h1>  </summary>
 
-# Techologies used 
 1. Flask
     - flask_sqlalchemy
     - flask_login
@@ -40,5 +41,6 @@ Then if everything checks out save the credentials to the db, let the user know 
     - wtforms
     - Werkzeug
 
-``` SQLite, HTML & CSS, Bootstrap, GIT ```
+``` Python3, SQLite, HTML & CSS, Bootstrap, GIT ```
+</details>
 
