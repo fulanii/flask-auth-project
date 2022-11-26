@@ -32,7 +32,7 @@ This is my first project after I completed my Python bootcamp, a social media st
     - finally add the post to the database 
     ![post page](images/post.png)
 
-<br>
+</details>
 
 # Techologies used 
 ``` Python3, Flask, flask_sqlalchemy, flask_login, flask_wtf, wtforms, Werkzeug, SQLite, HTML & CSS, Bootstrap, GIT ```
@@ -45,4 +45,3 @@ $ cd flask-auth-project
 $ pip install -r requirements.txt
 $ python run.py
 ```
-</details>
