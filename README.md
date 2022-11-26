@@ -12,8 +12,10 @@ This is my first project after I completed my Python bootcamp, a social media st
     - making sure the user entered a valid email
     - making sure the username is unique and a certain length
     - making sure the password is strong and over a certain lenght
-    - hash and salt the password using sha256
     ![register page](images/register.png)
+    - hash and salt the password using sha256
+    ![post page](images/hash.png)
+
  
 > Then if everything checks out save the credentials to the db, let the user know they're register was successful then redirect the user to the login page. 
 
@@ -25,14 +27,13 @@ This is my first project after I completed my Python bootcamp, a social media st
     - once login hide the (register, and login) buttons and show the (logout and home) buttons
     ![login page](images/login.png)
 
-<br>
 
 3. Create post
     - check post length 
     - finally add the post to the database 
-    ![post page](images/post.png)
 
 </details>
+
 
 # Techologies used 
 ``` Python3, Flask, flask_sqlalchemy, flask_login, flask_wtf, wtforms, Werkzeug, SQLite, HTML & CSS, Bootstrap, GIT ```
