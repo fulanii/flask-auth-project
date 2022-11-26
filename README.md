@@ -1,7 +1,7 @@
 
 # Flask Authentication Project
 
-This is my first project after I completed my Python bootcamp, a social media style web app done with flask and sqlite. The goal of this project was to demonstrate my skills in python and sql, so i mainly focused on the backend. And created a secure web app where a user can register an account, store the user info in a database with password hashing, login, create posts, see other people's posts, and be able to logout. 
+My first project after completing my Python bootcamp, a social media style web app done with flask and sqlite. The goal of this project was to demonstrate my skills in python and sql, so i mainly focused on the backend. And created a secure web app where a user can register an account, store the user info in a database with password hashing, login, create posts, see other people's posts, and be able to logout. 
 
 
 <details>
@@ -49,7 +49,7 @@ $ python run.py
 ```
 
 # Future improvement & contributions
-In the future thinking about adding the different changes bellow,and feel free to contribute too. 
+In the future thinking about adding the different changes bellow, and feel free to contribute too. 
 - Edit button
 - Delete button
 - Add 2fa (and use some sort of email api to verify user email) 
