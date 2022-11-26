@@ -1,7 +1,7 @@
 
 # Flask Authentication Project
 
-This is my first project after i completed my Python bootcamp, a social media style web app done with flask and sqlite. The goal of this project was to demonstrate my skills in python and sql, so i mainly focused on the backend. And created a secure web app where a user can register an account, login, create posts see other people posts and be able to logout. 
+This is my first project after I completed my Python bootcamp, a social media style web app done with flask and sqlite. The goal of this project was to demonstrate my skills in python and sql, so i mainly focused on the backend. And created a secure web app where a user can register an account, store the user info in a database with password hashing, login, create posts, see other people's posts, and be able to logout. 
 
 <br>
 
@@ -12,7 +12,7 @@ This is my first project after i completed my Python bootcamp, a social media st
     - making sure the username is unique and a certain length
     - making sure the password is strong and over a certain lenght
     - hash and salt the password using sha256
- ![register page](images/register.png)
+    ![register page](images/register.png)
  
 > Then if everything checks out save the credentials to the db, let the user know they're register was successful then redirect the user to the login page. 
 
@@ -21,12 +21,14 @@ This is my first project after i completed my Python bootcamp, a social media st
     - check if the email is in the database 
         - if yes check if the password hash match the on in the database
             - if yes log user in
-    - once login
-     hide the (register, and login) button and show the logout button
+    - once login hide the (register, and login) buttons and show the (logout and home) buttons
+    ![login page](images/login.png)
 
-
+<br>
 
 3. Create post
+    - get
+    ![post page](images/post.png)
 
 <br>
 
