@@ -47,3 +47,10 @@ $ cd flask-auth-project
 $ pip install -r requirements.txt
 $ python run.py
 ```
+
+# Future improvement & contributions
+In the future thinking about adding the different changes bellow,and feel free to contribute too. 
+- Edit button
+- Delete button
+- Add 2fa (and use some sort of email api to verify user email) 
+- Make UI nicer
