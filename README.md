@@ -27,21 +27,12 @@ This is my first project after I completed my Python bootcamp, a social media st
 <br>
 
 3. Create post
-    - get
+    - check post length 
+    - finally add the post to the database 
     ![post page](images/post.png)
 
 <br>
 
-<details>
-    <summary> Techologies used </summary>
-
-1. Flask
-    - flask_sqlalchemy
-    - flask_login
-    - flask_wtf
-    - wtforms
-    - Werkzeug
-
-``` Python3, SQLite, HTML & CSS, Bootstrap, GIT ```
-</details>
+# Techologies used 
+``` Python3, Flask, flask_sqlalchemy, flask_login, flask_wtf, wtforms, Werkzeug, SQLite, HTML & CSS, Bootstrap, GIT ```
 
