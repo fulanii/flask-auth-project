@@ -4,8 +4,7 @@
 My first project after completing my Python bootcamp, a social media style web app done with flask and sqlite. The goal of this project was to demonstrate my skills in python and sql, so i mainly focused on the backend. And created a secure web app where a user can register an account, store the user info in a database with password hashing, login, create posts, see other people's posts, and be able to logout. 
 
 # Project Demo 
-
-![Project Demo](images/final.gif)
+![demo](images/rfinale.gif)
 
 <details>
     <summary> <h1> Step by Step on how the backend work <h1>  </summary>
