@@ -54,3 +54,6 @@ In the future thinking about adding the different changes bellow, and feel free 
 - Delete button
 - Add 2fa (and use some sort of email api to verify user email) 
 - Make UI nicer
+
+
+![demo](images/final.gif)
