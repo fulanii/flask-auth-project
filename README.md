@@ -57,4 +57,3 @@ In the future thinking about adding the different changes bellow, and feel free 
 - Add 2fa (and use some sort of email api to verify user email) 
 - Make UI nicer
 
-ebc93f90c466210ec54665ec72718222911e2e6b1ec7bc135e99eb94b28fdaa2
